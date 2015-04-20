@@ -1,0 +1,212 @@
+﻿<!doctype html>
+
+<html>
+  <head>
+    <title>QGIS RO User Group</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:900,100' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script>
+      $(function(){
+        // bind change event to select
+        $('#other_groups').bind('change', function () {
+            var url = $(this).val(); // get selected value
+            if (url) { // require a URL
+                window.location = url; // redirect
+            }
+            return false;
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <!-- QGIS.org NAVBAR -->
+    <div class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://qgis.org"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="nav-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="http://qgis.org/ro/site/about/index.html">Descoperiți QGIS</a></li>
+            <li><a href="http://qgis.org/ro/site/forusers/index.html">Pentru Utilizatori</a></li>
+            <li><a href="http://qgis.org/ro/site/getinvolved/index.html">Implicați-vă</a></li>
+            <li><a href="http://qgis.org/ro/docs/index.html">Documentație</a></li>
+            <li class="navbar-dropdown">
+              <div class="select-dropdown">
+              <select id="other_groups">
+                <option value="" title="none">Alte grupuri de utilizatori</option>
+                <optgroup label="America">
+                  <option title="USA" value="http://qgis.us/">S.U.A.</option>
+                </optgroup>
+                <optgroup label="Europe">
+          <option title="Holland" value="http://www.qgis.nl/">Olanda</option>
+		  <option title="IE" value="https://ieqgis.wordpress.com/category/qgis/">Irlanda</option>
+		  <option title="Italy" value="http://www.qgis.it/">Italia</option>
+		  <option title="Portugal" value="http://qgis.pt/">Portugalia</option>
+		  <option title="Switzerland" value="http://qgis.ch">Elveția</option>
+		  <option title="UK" value="http://qgis.uk/">Marea Britanie</option>
+		<optgroup label="Oceania">
+		  <option title="ANZ" value="https://sites.google.com/site/ausqgis/home">Australia &amp; NZ</option>
+                </optgroup>
+              </select>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- TITLE & PAGE NAV -->
+    <div class="container">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 page-title">QGIS RO User Group</div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-md-offset-3">
+            <ul class="page-nav">
+              <li>
+                <a href="#about">Despre</a>
+              </li>
+              <li>
+                <a href="#meetings">Întâlniri</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
+              <li>
+                <a href="http://qgis.org" target="_blank">QGIS.org</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 lead byline">Bine ați venit la grupul de utilizatori din România al soft-ului gratuit și cu sursă deschisă <a href="http://qgis.org/ro/site/">QGIS</a>.
+	       <p class="osgeo-line">QGIS este un proiect <a href="http://www.osgeo.org/"><img src="images/osgeo_logo.png"> </a>.</p>
+	    </div>
+            <div class="col-md-6"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12"><br/><br/><br/><br/><br/><br/>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <h3>Întâlniri ale utilizatorilor</h3>
+              <p class="lead">Join the the next meeting. <a class="link" href="#meetings">Details &raquo;</a>
+              </p>
+            </div>
+            <div class="col-sm-4">
+              <h3>Discuții Online</h3>
+              <p class="lead"><a href="## internet resource to join the local group">
+                Join us online</a> about what we're doing now and what's next.
+              </p>
+            </div>
+            <div class="col-sm-4">
+              <h3>Learn about QGIS</h3>
+              <p class="lead"><a href="http://qgis.org/##/site/">QGIS</a> is the most popular open source GIS desktop tool in the world.
+              </p>
+            </div>
+          </div><!-- /.row -->
+        </div>
+        <!-- START THE FEATURETTES -->
+        <div class="container">
+          <hr class="featurette-divider">
+          <a name="about"></a>
+          <div class="featurette">
+            <h2 class="featurette-heading">Group Goals:</h2>
+            <p class="lead">
+              <ul class="lead">
+                <li>Coordination of development</li>
+                <li>QGIS information: meetings, articles in GIS magazines, QGIS information on Twitter, GIS discussion boards</li>
+                <li>Initialization of domain-specific interest groups and application modules (like waste-water, urban planning, surveying, etc.)</li>
+                <li>Organization of user meetings</li>
+                <li>Serve as a point of organization for regional meetups (held as Birds of a Feather type metings at regional GIS events)</li>
+                <li>Join us and share your ideas!</li>
+              </ul>
+            </p>
+          </div>
+
+          <hr class="featurette-divider">
+          <a name="meetings"></a>
+
+          <div class="featurette">
+            <h2 class="featurette-heading"><span class="muted">Come Join Us.</span></h2>
+            <p class="lead">
+            Description about the next meetings
+            </p>
+            <p>
+            <font size='+2'><b>Detailed program of the meeting</b></font></p>
+            </p>
+            <p>
+              Join us at another event near you ... or organize your own.
+              <iframe src="http://www.meetup.com/qgis_us/embeds/soonest_event_list?css=&amp;w=660&amp;bg=light" width="660" height="150" frameborder="0" border="0" allowtransparency="true" scrolling="no"></iframe>
+            </p>
+          </div>
+
+          <hr class="featurette-divider">
+
+          <div class="featurette">
+            <h2 class="featurette-heading">Generally interested in open source GIS?... not a QGIS user yet but want to join and help?</h2>
+            <p class="lead">QGIS itself is developed by a team of dedicated volunteers and organizations. You can participate in support channels, bug reporting, improving documentation, creating tutorials, promoting use of QGIS and helping developers improve this community tool.</p>
+          </div>
+
+          <hr class="featurette-divider">
+
+          <div class="featurette">
+            <h2 class="featurette-heading">We Discuss Things Online. <span class="muted">Join &amp; Introduce Yourself.</span></h2>
+            <p class="lead">
+              Can't make it to a meetup?  No problem. We collaborate on projects, ask for help, and post wins
+              to our <a href="##local mailing list">Mailing List</a>.
+              We welcome anyone to sign-up... you might just see something you're interested in helping with.
+            </p>
+          </div>
+
+          <hr class="featurette-divider">
+          <a name="contact"></a>
+          <div class="featurette">
+            <h2 class="featurette-heading">Want Even More Info? <span class="muted">Subscribe.</span></h2>
+            <p class="lead">Your can subscribe to our <a href="##local mailing list">Mailing List</a> and  updates at <a href="http://twitter.com/qgis_us">Twitter</a>. We want to hear from you!</p>
+          </div>
+
+          <hr class="featurette-divider">
+          <!-- /END THE FEATURETTES -->
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <ul id="social">
+          <li id="twitter"><a href="##local twitter account" class="external"><div></div></a></li>
+          <li id="facebook"><a href="##local facebook account" class="external"><div></div></a></li>
+          <li id="gplus"><a href="##local gplus account" class="external"><div></div></a></li>
+          <li id="github"><a href="http://github.com/qgis/" class="external"><div></div></a></li>
+          <li id="contact"><a href="##local mailing list"><div></div></a></li>
+        </ul>
+      </div>
+      <p class="footer credit">If not stated otherwise, all content is licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 licence (CC BY-SA)</a></p>
+      <p class="footer credit">Select graphics from<a href="http://thenounproject.com"> The Noun Project</a></p>
+    </footer>
+
+  </body>
+</html>
